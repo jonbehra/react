@@ -1,7 +1,7 @@
 import React from "react";
 import { View, Text, StyleSheet, Button, TouchableOpacity } from "react-native";
 
-const ButtonScreen = () => {
+const ButtonScreen = (props) => {
     let counter = 0;
     return (
         <View>

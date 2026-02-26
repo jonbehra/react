@@ -1,16 +1,16 @@
 import React from "react";
-import { View, Text, StyleSheet, Button, TouchableOpacity } from "react-native";
+import { View, Text, StyleSheet, Button } from "react-native";
 
-const MenuScreen = () => {
+const MenuScreen = (props) => {
     return (
         <View>
-            <Text style={StyleSheet.text}>
+            <Text style={styles.textStyle}>
                 Welcome to MenuScreen
             </Text>
             <Button
                 title="Go to List Screen"
                 color="purple"
-                onPress={() => console.log('Button Clicked:', counter++)}
+                onPress={() => props.navigation.navigate('List')}
             />
         </View>
     )
