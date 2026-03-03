@@ -14,7 +14,7 @@ const MenuScreen = (props) => {
             />
             <TouchableOpacity style={styles.btn}
                 onPress={() => props.navigation.navigate('Student')}>
-                <Text style={styles.textStyle}>Go to Student Screen</Text>
+                <Text style={styles.btnText}>Go to Student Screen</Text>
             </TouchableOpacity>
         </View>
     )
@@ -27,7 +27,7 @@ const styles = StyleSheet.create({
         fontSize:20
     },
     btn: {
-        backgroundcolor: '#3446eb',
+        backgroundColor: '#3446eb',
         marginVertical: 10,
         paddingVertical:10
     },
