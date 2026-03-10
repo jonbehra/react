@@ -1,10 +1,17 @@
 import React from 'react';
-import { View, Text, StyleSheet } from 'react-native';
+import { View, Text, StyleSheet, TouchableOpacity } from 'react-native';
 import StudentDetails from '../components/StudentDetails';
 
-const StudentScreen = () => {
+const StudentScreen = ({navigation}) => {
     return(
         <View>
+            <Text style={StyleSheet.text}>Students Screen</Text>
+            <TouchableOpacity
+                style={styles.profileButton}
+                onPress={() => navigation.navigate('Profile')}
+                >
+                    <Text style={styles.buttonText}>View Profile</Text>
+                </TouchableOpacity>
                     <Text styles={StyleSheet.text}>Students Screen</Text>
                     <StudentDetails name="Dion" image={require('../assets/avatar.png')} description="Lorem Ipsum is simply dummy text of the printing and typesetting industry.has been the industry's standard dummy text ever since the 1500s"/>
                     <StudentDetails name="Leon" image={require('../assets/avatar2.png')} description="Lorem Ipsum is simply dummy text of the printing and typesetting industry.has been the industry's standard dummy text ever since the 1500s"/>

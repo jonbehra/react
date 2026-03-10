@@ -1,13 +1,13 @@
 import React from "react";
 import { View, Text, Image, TouchableOpacity, StyleSheet } from "react-native";
 
-const StudentInfo = ({ fullName, position, description, profileimage }) => {
+const StudentInfo = ({ fullName, position, description, profileImage }) => {
   return (
     <View style={styles.container}>
-        <View styles={styles.headerBackground}/>
+        <View style={styles.headerBackground}/>
         <View style={styles.ImageContainer}>
         <Image 
-        source={profileimage} 
+        source={profileImage} 
         style={styles.profileImage} />
         </View>
 
@@ -19,7 +19,7 @@ const StudentInfo = ({ fullName, position, description, profileimage }) => {
         <Text style={styles.fullName}>{fullName}</Text>
         <Text style={styles.position}>{position}</Text>
         <Text style={styles.description}>{description}</Text>
-        <TouchableOpacity style={style.hireButton}>
+        <TouchableOpacity style={styles.hireButton}>
             <Text style={styles.hireButtonText}>HIRE HIM</Text>
         </TouchableOpacity>
         </View>

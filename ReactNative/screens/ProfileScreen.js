@@ -1,8 +1,7 @@
 import React from 'react';
-import { ScrollView, StyleSheet } from 'react-native';
+import { ScrollView, StyleSheet, View } from 'react-native';
 import StudentInfo from '../components/StudentInfo';
-import Projects from '../components/Project';
-import { View } from 'react-native-web';
+import Project from '../components/Project';
 
 
 const ProfileScreen = () => {
@@ -17,7 +16,7 @@ const ProfileScreen = () => {
           profileImage={require('../assets/avatar5.png')}
         />
 
-        <Projects 
+        <Project 
           Image1={require('../assets/avatar.png')}
           Image2={require('../assets/avatar2.png')}    
         />
