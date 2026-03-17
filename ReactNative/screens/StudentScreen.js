@@ -24,8 +24,22 @@ const styles = StyleSheet.create({
     text: {
         textAlign: 'center',
         fontSize:20,
-        marginVertical: 20
+        marginVertical: 20,
+        
+    },
+    profileButton: {
+        border: '2px solid black',
+        backgroundColor: 'red',
+        
+        alignItems: 'center',
+        borderRadius: 30
+        
+    },
+    buttonText: {
+        color: 'black',
+        
     }
+
 })
 
 export default StudentScreen;

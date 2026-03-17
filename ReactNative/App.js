@@ -9,6 +9,7 @@ import StudentScreen from './screens/StudentScreen';
 import ProfileScreen from './screens/ProfileScreen';
 import BoxScreen from './screens/BoxScreen';
 import PostsScreen from './screens/PostsScreen';
+import UsersScreen from './screens/UsersScreen';
 
 
 const Stack = createStackNavigator();
@@ -30,6 +31,7 @@ export default function App() {
         <Stack.Screen name="Profile" component={ProfileScreen} />
         <Stack.Screen name="Box" component={BoxScreen} />
         <Stack.Screen name="Posts" component={PostsScreen} />
+        <Stack.Screen name="Users" component={UsersScreen} />
 
       </Stack.Navigator>
     </NavigationContainer>

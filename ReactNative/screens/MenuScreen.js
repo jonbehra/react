@@ -7,22 +7,25 @@ const MenuScreen = (props) => {
             <Text style={styles.textStyle}>
                 Welcome to MenuScreen
             </Text>
-            <Button
-                title="Go to List Screen"
-                color="purple"
-                onPress={() => props.navigation.navigate('List')}
-            />
             <TouchableOpacity style={styles.btn}
+                onPress={() => props.navigation.navigate('List')}>
+                <Text style={styles.btnText}>Go to List Screen</Text>
+            </TouchableOpacity>
+            <TouchableOpacity style={styles.btnn}
                 onPress={() => props.navigation.navigate('Student')}>
-                <Text style={styles.btnText}>Go to Student Screen</Text>
+                <Text style={styles.btnTextt}>Go to Student Screen</Text>
             </TouchableOpacity>
             <TouchableOpacity style={styles.btn}
                 onPress={() => props.navigation.navigate('Box')}>
                 <Text style={styles.btnText}>Go to Box Screen</Text>
             </TouchableOpacity>
-            <TouchableOpacity style={styles.btn}
+            <TouchableOpacity style={styles.btnn}
                 onPress={() => props.navigation.navigate('Posts')}>
-                <Text style={styles.btnText}>Go to Posts Screen</Text>
+                <Text style={styles.btnTextt}>Go to Posts Screen</Text>
+            </TouchableOpacity>
+            <TouchableOpacity style={styles.btn}
+                onPress={() => props.navigation.navigate('Users')}>
+                <Text style={styles.btnText}>Go to Users Screen</Text>
             </TouchableOpacity>
         </View>
     )
@@ -35,12 +38,27 @@ const styles = StyleSheet.create({
         fontSize:20
     },
     btn: {
-        backgroundColor: '#3446eb',
-        marginVertical: 10,
-        paddingVertical:10
+        backgroundColor: 'yellow',
+        marginVertical: 17,
+        paddingVertical:17,
+        borderRadius: 30,
+        margin: 0
+    },
+    btnn: {
+        backgroundColor: 'blue',
+        marginVertical: 17,
+        paddingVertical:17,
+        borderRadius: 30,
+        margin: 0
+    },
+    btnTextt: {
+        color: 'white',
+        fontSize: 15,
+        textTransform: 'uppercase',
+        textAlign: 'center'
     },
     btnText: {
-        color: 'white',
+        color: 'black',
         fontSize: 15,
         textTransform: 'uppercase',
         textAlign: 'center'

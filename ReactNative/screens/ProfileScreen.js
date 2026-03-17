@@ -13,6 +13,7 @@ const ProfileScreen = () => {
           fullName="Leon Krasniqi"
           position="Mobile Developer"
           description="Student i apasionuar pas teknologjisë dhe zhvillimit të aplikacioneve me React Native. Më pëlqen të krijoj zgjidhje kreative."
+          
           profileImage={require('../assets/avatar5.png')}
         />
 

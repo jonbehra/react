@@ -50,6 +50,10 @@ const styles = StyleSheet.create({
     marginBottom: 10,
     zIndex: 10,
   },
+  ImageContainer: {
+    alignItems: 'center',
+
+  },
   profileImage: {
     width: 120,
     height: 120,
